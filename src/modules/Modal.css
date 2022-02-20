@@ -1,0 +1,115 @@
+.darkBG {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.centered {
+  position: fixed;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%); 
+} 
+
+.modal {
+  margin-top: 5px;
+  width: 100vw;
+  height: 85vh;
+  background: var(--bg);
+  color: var(--bg);
+  z-index: 10;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.modalHeader {
+  height: 60px;
+  background: var(--bg);
+  overflow: hidden;
+  color: var(--fg);
+}
+
+.heading {
+  margin: 0;
+  padding: 10px;
+  color: var(--fg);
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.modalContent {
+  padding: 10px;
+  font-size: 14px;
+  color: var(--fg);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.deleteBtn {
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 11px 28px;
+  font-size: 0.8rem;
+  border: none;
+  color: #fff;
+  background: var(--correct);
+  transition: all 0.25s ease;
+}
+
+.deleteBtn:hover {
+  box-shadow: 0 10px 20px -10px rgba(0, 148, 50, 0.6);
+  transform: translateY(-5px);
+  background: var(--correct);
+}
+
+.letterInput_ {
+  margin-bottom: 20px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  background-color: var(--sbg);
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--fg);
+  border-style: hidden;
+  text-transform: capitalize;
+}
+
+.letterInput_:focus {
+  outline-color: var(--accent);
+  outline-style: ridge;
+}
+
+.place {
+  background-color: var(--place);
+  border-color: var(--place);
+}
+
+.correct {
+  background-color: var(--correct);
+  border-color: var(--correct);
+}
+
+.letter {
+  background-color: var(--sfg);
+  border-color: var(--sfg);
+}
