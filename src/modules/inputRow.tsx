@@ -1,5 +1,4 @@
 import React, { ChangeEvent } from 'react'
-import ReactDOM from 'react-dom'
 import CheckWord from "../helpers/checkWord"
 import LetterInput from './letterInput';
 import "./inputRow.css"
@@ -53,7 +52,6 @@ const InputRow = (props: any) => {
           input.className += " wrong_letter"
           break;
       }
-
     })
 
   }

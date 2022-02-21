@@ -24,7 +24,7 @@ const App = () => {
       setHasFailed(true)
     }
     
-  })
+  },[usedInputs])
 
   console.log(word);
   
