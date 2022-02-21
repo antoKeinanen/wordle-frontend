@@ -20,7 +20,25 @@ const InputRow = (props: any) => {
 
     props.setUsed(props.used + 1)
 
-    CheckWord(props.word, ans).map((n, i) => {
+    const res = CheckWord(props.word, ans)
+
+    let correct = true;
+    
+    for (let i = 0; i < res.length; i++) {
+      const element = res[i];
+      if(element !== 2){
+        correct = false
+      }
+      
+    }
+
+    if(correct){
+      console.log("wee");
+      
+      props.success(true)
+    }
+
+    res.map((n, i) => {
       let input = inputs[i]
       input.disabled = true
       switch (n) {

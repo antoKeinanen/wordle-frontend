@@ -10,12 +10,11 @@ const GuideModal = (props) => {
       <div className='centered'>
         <div className='modal'>
           <div className="modalHeader">
-            <h2 className='heading'>Voi harmi!</h2>
+            <h2 className='heading'>Arvasit sanan oikein!</h2>
           </div>
           <div className="modalContent">
-            <h4>Et arvannut sanaa oikein!</h4>
-            <p>Oikea vastaus olisi ollut:</p>
-            <a href={`https://www.kielitoimistonsanakirja.fi/#/${props.word}`} rel="noreferrer" target="_blank">{props.word}</a>
+            <p>Oikea sana oli:</p> 
+            <a href={`https://www.kielitoimistonsanakirja.fi/#/${props.word}` }rel="noreferrer" target="_blank">{props.word}</a>
           </div>
           <div className="modalActions">
             <div className="actionsContainer">

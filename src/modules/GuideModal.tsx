@@ -16,9 +16,10 @@ const GuideModal = ({ setIsOpen }) => {
             <p>Arvaa sana! Sinulla on kuusi yritystä.</p>
             <p>Sana on suomenkielinen viisi kirjaiminen sana.</p>
             <p>Kirjoita sanan kirjaimet vaakasuuntaisiin ruutuihin ja paina submit.</p>
-            <p>Voit aina katsoa ohjeita kilkkaamalla kysymysmerkki nappia.</p>
+            <p>Voit päätellä mitä kirjaimia sanassa on niiden värien perusteella</p>
+            <p>Voit aina katsoa ohjeita kilkkaamalla kysymysmerkkinappia.</p>
             <hr style={{margin: "5px"}}></hr>
-            <h4 style={{margin: "5px"}}>Esimerkit:</h4>
+            <h2 style={{margin: "5px"}}>Esimerkit:</h2>
             <p>Sana sisältää kirjaimen K.</p>
             <br />
             <div className="letterBlocks">

@@ -6,6 +6,7 @@ import GuideModal from './modules/GuideModal';
 import { IoHelpCircleOutline } from "react-icons/io5";
 import words from './FI_5';
 import FailedModal from './modules/FailedModal';
+import SuccessModal from './modules/SuccessModal';
 
 
 
@@ -15,6 +16,7 @@ const App = () => {
   let [hasFailed, setHasFailed] = useState(false);
   let [usedInputs, setUsedInputs] = useState(0);
   let [isActive, setIsActive] = useState(false)
+  let [hasWon, setHasWon] = useState(false)
   let [word, setWord] = useState("rikki")
 
   useEffect(() => {
@@ -23,6 +25,9 @@ const App = () => {
     }
     
   })
+
+  console.log(word);
+  
 
   if (!isActive) {
     setWord(words[Math.floor(Math.random() * words.length)])
@@ -33,10 +38,11 @@ const App = () => {
     <>
       <div className="App">
         <div className='content'>
-          {[0, 1, 2, 3, 4, 5].map(e => <InputRow used={usedInputs} setUsed={setUsedInputs} word={word} key={e} />)}
+          {[0, 1, 2, 3, 4, 5].map(e => <InputRow success={setHasWon} used={usedInputs} setUsed={setUsedInputs} word={word} key={e} />)}
         </div>
         {isOpen && <GuideModal setIsOpen={setIsOpen} />}
         {hasFailed && <FailedModal setIsOpen={setIsOpen} word={word}/>}
+        {hasWon && <SuccessModal setIsOpen={setIsOpen} word={word}/>}
       </div>
       {isOpen || <button className='icon' onClick={() => setIsOpen(true)}><IoHelpCircleOutline /></button>}
     </>
