@@ -1,10 +1,11 @@
-import React, { ChangeEvent } from 'react'
+import React, { ChangeEvent, HtmlHTMLAttributes } from 'react'
 import CheckWord from "../helpers/checkWord"
 import LetterInput from './letterInput';
 import "./inputRow.css"
 
 const InputRow = (props: any) => {
   let inputs: HTMLInputElement[] = [];
+  let btn:HTMLButtonElement;
 
   const checkWord = () => {
     let ans = "";
@@ -31,11 +32,11 @@ const InputRow = (props: any) => {
       
     }
 
-    if(correct){
-      console.log("wee");
-      
+    if(correct){    
       props.success(true)
     }
+
+    btn.disabled = true
 
     res.map((n, i) => {
       let input = inputs[i]
@@ -69,7 +70,7 @@ const InputRow = (props: any) => {
   return (
     <div className='inputRow'>
       {["", "", "", "", ""].map((e, i) => <LetterInput onChange={handleInputChange} index={i} key={i} inputs={inputs}/>)}
-      <button onClick={checkWord}>Submit</button>
+      <button onClick={checkWord} ref={c => btn = c}>Arvaa</button>
     </div>
   )
 }

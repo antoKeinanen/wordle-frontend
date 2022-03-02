@@ -64,6 +64,7 @@
 }
 
 .deleteBtn {
+  margin-right: 10px;
   margin-top: 10px;
   cursor: pointer;
   font-weight: 500;
@@ -112,4 +113,10 @@
 .letter {
   background-color: var(--sfg);
   border-color: var(--sfg);
+}
+
+.wordLink{
+  text-decoration: underline;
+  color: var(--fg);
+  font-size: 25px;
 }

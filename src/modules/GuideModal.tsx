@@ -15,7 +15,7 @@ const GuideModal = ({ setIsOpen }) => {
           <div className="modalContent">
             <p>Arvaa sana! Sinulla on kuusi yritystä.</p>
             <p>Sana on suomenkielinen viisi kirjaiminen sana.</p>
-            <p>Kirjoita sanan kirjaimet vaakasuuntaisiin ruutuihin ja paina submit.</p>
+            <p>Kirjoita sanan kirjaimet vaakasuuntaisiin ruutuihin ja paina Arvaa nappia.</p>
             <p>Voit päätellä mitä kirjaimia sanassa on niiden värien perusteella</p>
             <p>Voit aina katsoa ohjeita kilkkaamalla kysymysmerkkinappia.</p>
             <hr style={{margin: "5px"}}></hr>

@@ -11,7 +11,6 @@ import SuccessModal from './modules/SuccessModal';
 
 
 const App = () => {
-
   let [isOpen, setIsOpen] = useState(true);
   let [hasFailed, setHasFailed] = useState(false);
   let [usedInputs, setUsedInputs] = useState(0);
@@ -25,8 +24,6 @@ const App = () => {
     }
     
   },[usedInputs])
-
-  console.log(word);
   
 
   if (!isActive) {
