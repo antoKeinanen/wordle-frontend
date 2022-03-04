@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Modal.css"
+import "./styles/Modal.css"
 
 
 const GuideModal = (props) => {
@@ -19,6 +19,7 @@ const GuideModal = (props) => {
           <div className="modalActions">
             <div className="actionsContainer">
               <button className='deleteBtn' onClick={() => window.location.reload()}>Yritä uudelleen!</button>
+              <button className='deleteBtn' onClick={() => fetch("https://wordle-fi.netlify.app/.netlify/functions/report?word=" + props.word, {mode: "cors"}).then(() => window.location.reload())}>Ilmoita sana!</button>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { ChangeEvent, HtmlHTMLAttributes } from 'react'
 import CheckWord from "../helpers/checkWord"
 import LetterInput from './letterInput';
-import "./inputRow.css"
+import "./styles/inputRow.css"
 
 const InputRow = (props: any) => {
   let inputs: HTMLInputElement[] = [];
@@ -34,6 +34,7 @@ const InputRow = (props: any) => {
 
     if(correct){    
       props.success(true)
+      localStorage.setItem("score", props.score)
     }
 
     btn.disabled = true

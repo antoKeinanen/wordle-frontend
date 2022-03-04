@@ -1,5 +1,5 @@
 import React from 'react'
-import "./letterInput.css"
+import "./styles/letterInput.css"
 
 const LetterInput = (props: any) => {
   return (
