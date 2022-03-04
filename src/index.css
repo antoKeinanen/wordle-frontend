@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
-body{
-  --accent: #61b0f1; 
-  --bg: #19171a; 
-  --dbg: #151416; 
-  --sbg: #201e21; 
-  --fg: #d8dee9; 
+body {
+  --accent: #61b0f1;
+  --bg: #19171a;
+  --dbg: #151416;
+  --sbg: #201e21;
+  --fg: #d8dee9;
   --sfg: #3a3a3a;
   --place: #e1b12c;
   --correct: #009432;
@@ -17,6 +17,6 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Source Code Pro", monospace, 'Courier New', Courier, monospace;
+  font-family: "Source Code Pro", monospace, "Courier New", Courier, monospace;
   transition: 0.2s ease-in-out;
 }

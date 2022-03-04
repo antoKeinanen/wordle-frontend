@@ -1,40 +1,40 @@
-.letterInput{
-    margin-bottom: 20px;
-    width: 4rem;
-    height: 4rem;
-    margin-right: 1rem;
-    background-color: var(--sbg);
-    font-size: 1.5rem;
-    text-align: center;
-    color: var(--fg);
-    border-style: hidden;
-    text-transform: capitalize;
+.letterInput {
+  margin-bottom: 20px;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  background-color: var(--sbg);
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--fg);
+  border-style: hidden;
+  text-transform: capitalize;
 }
 
-.letterInput:focus{
-    outline-color: var(--accent);
-    outline-style:ridge;
+.letterInput:focus {
+  outline-color: var(--accent);
+  outline-style: ridge;
 }
 
-.wrong_place{
-    background-color: var(--place);
-    border-color: var(--place);
+.wrong_place {
+  background-color: var(--place);
+  border-color: var(--place);
 }
 
-.correct_place{
-    background-color: var(--correct);
-    border-color: var(--correct);
+.correct_place {
+  background-color: var(--correct);
+  border-color: var(--correct);
 }
 
-.wrong_letter{
-    background-color: var(--sfg);
-    border-color: var(--sfg);
+.wrong_letter {
+  background-color: var(--sfg);
+  border-color: var(--sfg);
 }
 
-@media only screen and (max-width: 700px){
-    .letterInput{
-        margin-bottom: 10px;
-        width: 2.5rem;
-        height: 2.5rem;
-    }
+@media only screen and (max-width: 700px) {
+  .letterInput {
+    margin-bottom: 10px;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }

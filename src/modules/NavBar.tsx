@@ -1,16 +1,16 @@
-import React from 'react'
-import "./styles/NavBar.css"
+import React from "react";
+import "./styles/NavBar.css";
 
-import { IoPodiumOutline, IoHelpCircleOutline } from 'react-icons/io5'
+import { IoPodiumOutline, IoHelpCircleOutline } from "react-icons/io5";
 
 const NavBar = (props) => {
   return (
     <div className="container">
-      <IoPodiumOutline/>
+      <IoPodiumOutline />
       <p>{props.score}</p>
-      <IoHelpCircleOutline onClick={()=>props.setOpen(true)}/>
+      <IoHelpCircleOutline onClick={() => props.setOpen(true)} />
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

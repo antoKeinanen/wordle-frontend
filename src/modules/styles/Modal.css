@@ -12,8 +12,8 @@
   position: fixed;
   top: -5%;
   left: 50%;
-  transform: translate(-50%); 
-} 
+  transform: translate(-50%);
+}
 
 .modal {
   margin-top: 5px;
@@ -39,15 +39,16 @@
   font-weight: 500;
   font-size: 35px;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .modalContent {
   padding: 10px;
+  margin: 5px;
   font-size: 14px;
   color: var(--fg);
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .modalActions {
@@ -115,7 +116,7 @@
   border-color: var(--sfg);
 }
 
-.wordLink{
+.wordLink {
   text-decoration: underline;
   color: var(--fg);
   font-size: 25px;
